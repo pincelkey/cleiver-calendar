@@ -1,0 +1,38 @@
+<?php
+
+function taxonomy_{{name_function}}() {
+    $settings = [
+        'name_taxonomy_plural'   => '',
+        'name_taxonomy_Singular' => '',
+        'name_register_taxonomy' => '',
+        'rewrite_slug'           => '',
+        'post_type'              => [],
+        'text_domain'            => 'pandawp'
+    ];
+
+    $labels = [
+        'name'          => _x( $settings['name_taxonomy_plural'], 'Taxonomy General Name', $settings['text_domain'] ),
+        'singular_name' => _x( $settings['name_taxonomy_Singular'], 'Taxonomy Singular Name', $settings['text_domain'] ),
+        'menu_name'     => __( $settings['name_taxonomy_plural'], $settings['text_domain'] )
+    ];
+
+    $rewrite = [
+        'slug'         => $settings['rewrite_slug'],
+        'with_front'   => true,
+        'hierarchical' => false,
+    ];
+
+    $args = [
+        'labels'            => $labels,
+        'hierarchical'      => true,
+        'public'            => true,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'show_in_nav_menus' => true,
+        'show_tagcloud'     => true,
+        'show_in_rest'      => true,
+        'rewrite'           => $rewrite,
+    ];
+    register_taxonomy( $settings['name_register_taxonomy'], $settings['post_type'], $args );
+}
+add_action( 'init', 'taxonomy_{{name_function}}', 0 );

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    {% include '_html-head.twig' %}
+
+    {% block metas %}
+      {% include "_html-seo.twig" %}
+
+      {# content #}
+    {% endblock %}
+  </head>
+
+  <body>
+    <main id="app" class="c-main"></main>
+
+    {{ function('wp_footer') }}
+  </body>
+</html>

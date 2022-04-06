@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Titillium+Web&family=Ubuntu:wght@400;700&display=swap");
+
+/*
+* -----------------------------------------------------------/
+* 1. Colors
+* -----------------------------------------------------------/
+*/
+
+/* 1.1 Base colors */
+$primary-color: #0064ec;
+$secondary-color: #6600ec;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #e00808;
+
+/* 1.2 Alter colors */
+
+/* 1.2.1 Primary */
+$primary-alt: #0053ec;
+
+/* 1.2.2 Secondary */
+$secondary-alt: #ac8cd6;
+
+/* 1.2 Gray colors */
+$gray-light: #f3f3f3;
+$gray: #e5e5e5;
+$gray-medium: #cfcfcf;
+$gray-dark: #6d6d6d;
+
+/* 1.2 Other colors */
+$black: #434343;
+$white: #fff;
+
+/*
+* -----------------------------------------------------------/
+* 2. Fonts
+* -----------------------------------------------------------/
+*/
+
+/* 2.1 Font Sizes */
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-21: 21px;
+$fs-25: 25px;
+$fs-30: 30px;
+$fs-35: 35px;
+$fs-40: 40px;
+
+/* 2.2 Font Weights */
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;
+
+/* 2.3 Font Families */
+$body-font-family: "Josefin Sans", sans-serif;
+$secondary-font-family: "Josefin Sans", sans-serif;

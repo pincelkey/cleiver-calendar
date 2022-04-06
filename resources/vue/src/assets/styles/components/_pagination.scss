@@ -1,0 +1,22 @@
+.c-pagination {
+  &__link {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &--active {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__arrow {
+    width: 37px;
+    height: 36px;
+    border-radius: 50%;
+    padding: 10px;
+    color: $white;
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+  }
+}

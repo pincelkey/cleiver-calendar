@@ -1,0 +1,61 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-center {
+  justify-content: center;
+}
+
+.mr-1 {
+  margin-right: 1rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mv-1 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.button-success {
+  background-color: rgb(6, 175, 82) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.button-trash {
+  background-color: rgb(238, 8, 58) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.result {
+  background-color: rgba(#007cba, 0.1);
+}
+
+.trash {
+  color: red;
+}

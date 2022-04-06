@@ -1,0 +1,29 @@
+{
+  "name": "pandawp",
+  "version": "6.3.0",
+  "author": "Cleiver Valera Flores <hola@cleivervalera.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/pincelkey/panda-wp.git"
+  },
+  "keywords": [
+    "wordpress",
+    "wordpress vue",
+    "vue",
+    "spa",
+    "eloquent",
+    "wordpress api",
+    "wordpress controllers",
+    "wordpress models"
+  ],
+  "scripts": {
+    "vue:serve": "npm --prefix ./resources/vue/ run serve",
+    "vue:stage": "npm --prefix ./resources/vue/ run stage",
+    "vue:build": "npm --prefix ./resources/vue/ run build",
+    "admin:serve": "npm --prefix ./resources/admin/ run start",
+    "admin:build": "npm --prefix ./resources/admin/ run build",
+    "admin:stage": "npm --prefix ./resources/admin/ run stage"
+  }
+}

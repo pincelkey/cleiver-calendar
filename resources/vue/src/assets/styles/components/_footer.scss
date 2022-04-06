@@ -1,0 +1,16 @@
+.c-footer {
+  color: $white;
+  background: $primary-color;
+  padding: 0.5rem 0;
+
+  a,
+  a:hover,
+  a:focus {
+    color: $white;
+    font-weight: $font-bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

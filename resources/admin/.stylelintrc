@@ -1,0 +1,40 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "no-empty-source": null,
+    "string-quotes": null,
+    "comment-whitespace-inside": "always",
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "number-leading-zero": "always",
+    "function-comma-space-after": "always-single-line",
+    "no-descending-specificity": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "extend",
+          "at-root",
+          "debug",
+          "warn",
+          "error",
+          "if",
+          "else",
+          "for",
+          "each",
+          "while",
+          "mixin",
+          "include",
+          "content",
+          "return",
+          "function",
+          "tailwind",
+          "apply",
+          "responsive",
+          "variants",
+          "screen"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "pandawp/generator",
+    "type": "project",
+    "description": "PandaWP CLI",
+    "authors": [
+        {
+            "name": "Cleiver Valera",
+            "email": "hola@cleivervalera.com"
+        }
+    ],
+    "require": {
+        "timber/timber": "1.*",
+        "illuminate/database": "^7.28",
+        "upstatement/routes": "*",
+        "phpmailer/phpmailer": "6.1",
+        "vlucas/phpdotenv": "^5.3",
+        "google/apiclient": "^2.0"
+    },
+    "require-dev": {
+        "symfony/console": "^5.0",
+        "kint-php/kint": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "PandaWP\\Console\\": "commands/"
+        }
+    }
+}

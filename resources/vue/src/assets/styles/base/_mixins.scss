@@ -1,0 +1,65 @@
+@mixin transition($time: 0.35s) {
+  transition: all $time cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@mixin b-radious($strong: 5px) {
+  border-radius: $strong;
+}
+
+@mixin box-shadow($align: right, $color: rgba($black, 0.45), $x: 10px, $y: 10px, $size: 20px) {
+  @if $align == left {
+    box-shadow: $color $x -$y $size; /* New */
+  }
+
+  @else {
+    box-shadow: $color $x $y $size; /* New */
+  }
+}
+
+@mixin hr($x: left, $y: top, $color: $primary-color, $size: 4px, $desp: 0) {
+  &::after {
+    content: "";
+    background: $color;
+    width: 38px;
+    height: $size;
+    position: absolute;
+
+    @if $x == left and $y == top {
+      left: 0;
+      top: -0.5rem;
+      margin: auto;
+    }
+
+    @else if $x == left and $y == bottom {
+      left: 0;
+      bottom: $desp;
+      margin: auto;
+    }
+
+    @else if $x == center and $y == bottom {
+      left: 0;
+      right: 0;
+      bottom: $desp;
+      margin: auto;
+    }
+
+    @else if $x == center and $y == top {
+      left: 0;
+      right: 0;
+      top: -0.5rem;
+      margin: auto;
+    }
+  }
+}
+
+@mixin ul-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button-reset {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

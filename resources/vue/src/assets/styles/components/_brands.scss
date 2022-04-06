@@ -1,0 +1,11 @@
+.c-brand {
+  &__link {
+    display: block;
+    height: 50px;
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "styles": [
+      "src/scss/core/*.scss",
+      "src/scss/main.scss"
+    ],
+    "js": [
+      "src/js/core/*.js"
+    ],
+    "images": [
+      "src/images/**/*"
+    ],
+    "fonts": [
+      "src/fonts/**/*"
+    ]
+  },
+  "publicPath": "../../app/static/admin",
+  "theme": "pandawp",
+  "globalResources": {
+    "styles": "src/scss/**/*.scss",
+    "js": "src/js/**/*.js",
+    "vue": "src/js/**/*.vue",
+    "images": "src/images/**/*.{jpg,jpeg,png,svg,ico}",
+    "fonts": "src/fonts/**/*.{ttf,otf,eot,woff,woff2,svg}",
+    "php": "app/*.php",
+    "twig": "**/*.twig"
+  },
+  "proxy": "pandawp.site",
+  "ignoreFoldersDevelopment": [
+    "src/**/*",
+    "!src/config.json",
+    "!src/{scss,js/!(libs),build}",
+    "!src/{scss,js/!(libs),build}/**/*"
+  ],
+  "ignoreFoldersProduction": [
+    "src/**/*",
+    "!src/config.json",
+    "!src/{scss,js,build}",
+    "!src/{scss,js,build}/**/*"
+  ],
+  "compressFolder": [
+    "**/*",
+    "**/.*",
+    ".*",
+    "!node_modules{,/**}",
+    "!vendor{,/**}",
+    "!bundled{,/**}",
+    "!package-lock.json",
+    "!*.lock",
+    "!*.log"
+  ]
+}

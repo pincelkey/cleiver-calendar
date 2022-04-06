@@ -1,0 +1,45 @@
+{
+  "name": "pandawp-vue",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "stage": "vue-cli-service build --mode staging",
+    "build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@iconify/vue2": "^1.1.2",
+    "@popperjs/core": "^2.11.2",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.3",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "register-service-worker": "^1.7.1",
+    "swiper": "^8.0.6",
+    "v-lazy-image": "^2.0.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuelidate": "^0.7.7",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "postcss-scss": "^4.0.3",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^14.5.1",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-scss": "^4.1.0",
+    "stylelint-webpack-plugin": "^1.2.3",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

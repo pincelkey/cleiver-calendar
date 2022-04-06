@@ -1,0 +1,20 @@
+.c-section {
+  outline: none;
+  height: 70vh;
+
+  &__title {
+    font-size: $fs-30;
+    color: $black;
+    font-weight: $font-bold;
+  }
+
+  .c-card-image {
+    height: 200px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .c-section {
+    outline: none;
+  }
+}

@@ -1,0 +1,78 @@
+.reveal {
+  outline: none !important;
+}
+
+figure {
+  margin: 0;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+button,
+a {
+  outline: none !important;
+}
+
+select {
+  background-image: none !important;
+}
+
+.button {
+  outline: none !important;
+}
+
+.button-reset {
+  border: none;
+  outline: none;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.input-reset {
+  border: none;
+  outline: none;
+  font-size: $fs-16;
+  margin: 0 !important;
+  width: 100%;
+  box-shadow: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+
+.select-reset {
+  height: auto;
+  border: none;
+  outline: none;
+  font-size: $fs-16;
+  background-image: linear-gradient(transparent, transparent) !important;
+  cursor: pointer;
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.ul-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-body {
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}

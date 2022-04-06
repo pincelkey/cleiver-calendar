@@ -1,0 +1,52 @@
+{
+  "name": "pandawp-admin",
+  "scripts": {
+    "start": "gulp --env=development",
+    "build": "gulp build --env=production --mode=production",
+    "stage": "gulp build --env=production --mode=staging"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "fontello-cli": "^0.6.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^11.0.0",
+    "gulp-zip": "^5.0.1",
+    "merge": "^1.2.1",
+    "node-sass": "^4.13.0",
+    "replace-in-file-webpack-plugin": "^1.0.6",
+    "stylelint": "^12.0.1",
+    "stylelint-config-standard": "^19.0.0",
+    "vinyl-named": "^1.1.0",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.45.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "aos": "^2.3.4",
+    "foundation-sites": "^6.6.1",
+    "jquery": "^3.4.1",
+    "swiper": "^5.3.6",
+    "v-lazy-image": "^1.4.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.9",
+    "vue-router-prefetch": "^1.6.3",
+    "vuex": "^3.1.3"
+  }
+}

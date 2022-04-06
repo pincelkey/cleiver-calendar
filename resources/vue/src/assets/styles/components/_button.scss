@@ -1,0 +1,36 @@
+.c-button {
+  font-size: $fs-16;
+  padding: 0.7rem 1rem;
+  display: inline-block;
+  outline: none;
+
+  @include b-radious(5px);
+  @include transition(0.2s);
+
+  &--primary {
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-alt;
+      color: $white;
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    color: $primary-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+}

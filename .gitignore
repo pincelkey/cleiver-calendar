@@ -1,0 +1,34 @@
+vendor/
+resources/vue/node_modules
+resources/admin/node_modules
+
+# Log files
+resources/vue/npm-debug.log*
+resources/vue/yarn-debug.log*
+resources/vue/yarn-error.log*
+resources/vue/pnpm-debug.log*
+resources/admin/npm-debug.log*
+resources/admin/yarn-debug.log*
+resources/admin/yarn-error.log*
+resources/admin/pnpm-debug.log*
+
+# local env files
+.env
+.env.php
+resources/vue/.env
+resources/vue/.env.staging
+resources/admin/src/config.json
+
+# Editor directories and files
+resources/vue/.idea
+resources/vue/.vscode
+resources/vue/*.suo
+resources/vue/*.ntvs*
+resources/vue/*.njsproj
+resources/vue/*.sln
+resources/vue/*.sw?
+
+# etc
+app/static/admin/temp/*
+app/static/public/temp/*
+composer.phar

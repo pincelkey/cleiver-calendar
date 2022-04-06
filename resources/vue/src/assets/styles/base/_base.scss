@@ -1,0 +1,50 @@
+::selection {
+  color: #fff;
+  background: $primary-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: $body-font-family !important;
+  color: $gray-dark !important;
+}
+
+a {
+  color: $primary-color;
+}
+
+h1,
+h2,
+h3 {
+  color: $black;
+  font-family: $secondary-font-family !important;
+}
+
+* {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $gray-dark;
+    border-radius: 10px;
+
+    &:hover {
+      background: $black;
+    }
+
+    &:active {
+      background: $primary-color;
+    }
+  }
+}

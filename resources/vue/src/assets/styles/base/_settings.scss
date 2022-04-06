@@ -1,0 +1,117 @@
+/* Maps - Variables */
+$primary-colors: (
+  "color": $primary-color,
+  "alt": $primary-alt,
+);
+
+$secondary-colors: (
+  "color": $secondary-color,
+  "alt": $secondary-alt,
+);
+
+$gray-colors: (
+  "light": $gray-light,
+  "color": $gray,
+  "medium": $gray-medium,
+  "dark": $gray-dark
+);
+
+$other-colors: (
+  "white": $white,
+  "black": $black,
+  "success": $success-color,
+  "warnings": $warning-color,
+  "alerts": $alert-color
+);
+
+$font-sizes: (
+  "14" : $fs-14,
+  "16" : $fs-16,
+  "18" : $fs-18,
+  "21" : $fs-21,
+  "25" : $fs-25,
+  "30" : $fs-30,
+  "35" : $fs-35,
+  "40" : $fs-40
+);
+
+$font-weights: (
+  "regular": $font-regular,
+  "medium": $font-medium,
+  "sbold": $font-semibold,
+  "bold": $font-bold,
+  "black": $font-black
+);
+
+$font-families: (
+  "1": $body-font-family,
+  "2": $secondary-font-family
+);
+
+/*
+* -----------------------------------------------------------/
+* 1. Text and Background colors
+* -----------------------------------------------------------/
+*/
+@each $key, $pcolor in $primary-colors {
+  .pri-#{$key} {
+    color: $pcolor;
+  }
+
+  .bg-pri-#{$key} {
+    background-color: $pcolor;
+  }
+}
+
+@each $key, $scolor in $secondary-colors {
+  .sec-#{$key} {
+    color: $scolor;
+  }
+
+  .bg-sec-#{$key} {
+    background-color: $scolor;
+  }
+}
+
+@each $key, $gcolor in $gray-colors {
+  .gray-#{$key} {
+    color: $gcolor;
+  }
+
+  .bg-gray-#{$key} {
+    background-color: $gcolor;
+  }
+}
+
+@each $key, $ocolor in $other-colors {
+  .#{$key} {
+    color: $ocolor;
+  }
+
+  .bg-#{$key} {
+    background-color: $ocolor;
+  }
+}
+
+/*
+* -----------------------------------------------------------/
+* 2. Font size, weights and families
+* -----------------------------------------------------------/
+*/
+@each $key, $fsize in $font-sizes {
+  .fs-#{$key} {
+    font-size: $fsize;
+  }
+}
+
+@each $key, $fweight in $font-weights {
+  .w-#{$key} {
+    font-weight: $fweight;
+  }
+}
+
+@each $key, $ffam in $font-families {
+  .f#{$key} {
+    font-family: $ffam;
+  }
+}
